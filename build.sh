@@ -6,6 +6,7 @@ source shared.sh
 
 EXTERNAL_REL_BUILDROOT=../base_external
 export BR2_EXTERNAL=$[EXTERNAL_REL_BUILDROOT]
+export FORCE_UNSAFE_CONFIGURE=1
 git submodule init
 git submodule sync
 git submodule update
